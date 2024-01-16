@@ -166,13 +166,10 @@ a.a-underline:hover span {
 
 header {
     width: 100%;
-    position: absolute;
-    left: 0;
     z-index: 1001;
     background: rgba(20, 20, 20, 0.8);
     margin: 0;
-    height: 90px;
-    /*border-bottom:solid 1px rgba(255,255,255,0);*/
+    padding: 0.5rem 0;
 }
 
 header.smaller.has-topbar {
@@ -313,10 +310,9 @@ header.smaller #mainmenu ul ul {
 }
 
 header.smaller {
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     position: fixed;
     top: 0px;
-    padding: 0;
     -webkit-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
     -moz-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
     box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
@@ -330,10 +326,6 @@ header.smaller .btn-rsvp {
 
 .boxed header.smaller {
     margin-top: 0px;
-}
-
-header.smaller div#logo,
-header.s2 div#logo {
 }
 
 header.smaller.scroll-light {
@@ -644,7 +636,7 @@ header .header-col.mid .social-icons {
     display: inline-block;
     padding: 30px 18px;
     text-decoration: none;
-    color: #fff;
+    color: #333;
     text-align: center;
     outline: none;
 }
@@ -1188,6 +1180,10 @@ header.header-light .logo-2 {
 .footer_link a {
     font-size: 16px;
     font-weight: 700;
+}
+
+.footer_link a:hover {
+    color: #fff;
 }
 
 .footer_link a::after {
@@ -8971,8 +8967,7 @@ footer .tiny-border span {
 }
 
 .v-center {
-    min-height: 100%;
-    min-height: 100vh;
+    height: 700px;
     display: flex;
     align-items: center;
 }
@@ -12492,9 +12487,6 @@ img {
 
     #testimonial-full blockquote {
         padding: 20px;
-    }
-
-    #revolution-slider {
     }
 
     nav {
