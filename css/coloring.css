@@ -24,8 +24,10 @@ section.call-to-action,
 .date-post,
 .team-list .small-border,
 .de-team-list .small-border,
-.btn-line:hover,a.btn-line:hover,
-.btn-line.hover,a.btn-line.hover,
+.btn-line:hover,
+a.btn-line:hover,
+.btn-line.hover,
+a.btn-line.hover,
 .owl-arrow span,
 .de-progress .progress-bar,
 #btn-close-x:hover,
@@ -43,11 +45,12 @@ section.call-to-action,
 .de_tab.tab_style_2 .de_nav li.active span,
 .de_tab.tab_steps.style-2 .de_nav li.active span,
 .feature-box-small-icon.style-2 .number.bg-color,
-a.btn-custom,.btn-custom,
+a.btn-custom,
+.btn-custom,
 .owl-custom-nav .btn-next:before,
 .owl-custom-nav .btn-prev:before,
 .timeline > li > .timeline-badge,
-.de_light  .de_tab.tab_style_3 .de_nav li.active span,
+.de_light .de_tab.tab_style_3 .de_nav li.active span,
 .de_tab.tab_style_4 .de_nav li.active span,
 .circle,
 .social-icons-sm i:hover,
@@ -83,24 +86,25 @@ a.btn-custom,.btn-custom,
 a.btn-border:hover,
 .dih-overlay,
 .widget_tags li a,
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
 #selector .sc-opt,
 #cookieConsent a.cookieConsentOK,
 .mask .cover,
 .icon-box:hover,
 #back-to-top,
-.post-content .date-box
-{
-	background:var(--primary-color);
+.post-content .date-box {
+	background: var(--primary-color);
 }
 
-
-a,a:hover,
 .id-color,
 #mainmenu li:hover > ul,
 .date-box .day,
 .slider_text h1,
-h1.id-color,h2.id-color,h3.id-color,h4.id-color,
+h1.id-color,
+h2.id-color,
+h3.id-color,
+h4.id-color,
 .pricing-box li h1,
 .title span,
 i.large:hover,
@@ -114,14 +118,17 @@ a.btn-slider:after,
 a.btn-line:after,
 .team-list .social a,
 .de_contact_info i,
-.dark .btn-line:hover:after, .dark a.btn-line:hover:after, .dark a.btn-line.hover:after,
+.dark .btn-line:hover:after,
+.dark a.btn-line:hover:after,
+.dark a.btn-line.hover:after,
 a.btn-text:after,
-.separator span  i,
+.separator span i,
 address span strong,
 .de_tab.tab_steps .de_nav li span:hover,
 .de_testi_by,
 .widget_tags li a,
-.dark .btn-line:after, .dark  a.btn-line:after,
+.dark .btn-line:after,
+.dark a.btn-line:after,
 .crumb li .active,
 .btn-right:after,
 .btn-left:before,
@@ -132,7 +139,8 @@ header .info .social i:hover,
 .testimonial-list:before,
 span.deco-big,
 h2.hs1 span,
-.wm,.wm2,
+.wm,
+.wm2,
 .blog-list .date-box .day,
 .social-icons-sm i,
 .de_tab.tab_style_4 .de_nav li span,
@@ -166,42 +174,38 @@ a.btn-border.light:hover,
 a.btn-custom.btn-white,
 .mask:hover .cover h3 i,
 #topbar a i,
-.ul-style-2 li:before,.ul-style-2 li:after,
+.ul-style-2 li:before,
+.ul-style-2 li:after,
 .text-light h5,
 #mainmenu li a:hover,
-i.id-color
-{
-	color:var(--primary-color);
+i.id-color {
+	color: var(--primary-color);
 }
 
 .id-color-2,
-span.id-color-2{
-	color:var(--secondary-color);
+span.id-color-2 {
+	color: var(--secondary-color);
 }
 
 .id-color-3,
-span.id-color-3{
-	color:var(--tertiary-color);
+span.id-color-3 {
+	color: var(--tertiary-color);
 }
-
 
 .bg-color-2,
 .timeline h5,
 .testimonial-color .item:nth-child(2n) blockquote:before,
-a.btn-custom.bg-color-2
-
-{
-	background:var(--secondary-color);
+a.btn-custom.bg-color-2 {
+	background: var(--secondary-color);
 }
 
 .bg-color-3,
-a.btn-custom.bg-color-3
-{
-	background:var(--tertiary-color);
+a.btn-custom.bg-color-3 {
+	background: var(--tertiary-color);
 }
 
-.feature-box-group .feature-box-type-1 i{
-	background:var(--secondary-color);
+.feature-box-group .feature-box-type-1 i {
+	background: var(--secondary-color);
 }
 .bg-gradient-to-right,
 .post-image .post-info .inner,
@@ -215,71 +219,127 @@ a.btn-custom.secondary,
 header.header-gradient,
 .ribbon.s2,
 .table-pricing,
-.box-highlight
-{
-background:var(--primary-color);
+.box-highlight {
+	background: var(--primary-color);
 }
 
-
-.bg-gradient-to-top-right{
-	background:linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
+.bg-gradient-to-top-right {
+	background: linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
 }
 
 .feature-box-type-1 i,
-#preloader{
-background-image:linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
+#preloader {
+	background-image: linear-gradient(to top right, var(--primary-color), var(--primary-color-2));
 }
 
 .overlay-gradient {
-background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.9) 0%, rgba(var(--primary-color-2-rgb),0.9) 100%);
-background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.9) 0%,rgba(var(--primary-color-2-rgb),0.9) 100%);
-background: linear-gradient(45deg, rgba(var(--primary-color-rgb),0.9) 0%,rgba(var(--primary-color-2-rgb),0.9) 100%); 
+	background: -moz-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.9) 0%,
+		rgba(var(--primary-color-2-rgb), 0.9) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.9) 0%,
+		rgba(var(--primary-color-2-rgb), 0.9) 100%
+	);
+	background: linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.9) 0%,
+		rgba(var(--primary-color-2-rgb), 0.9) 100%
+	);
 }
 
-.overlay-gradient.t80{
-background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.8) 0%, rgba(var(--primary-color-2-rgb),0.8) 100%);
-background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.8) 0%,rgba(var(--primary-color-2-rgb),0.8) 100%);
-background: linear-gradient(45deg, rgba(var(--primary-color-rgb),0.8) 0%,rgba(var(--primary-color-2-rgb),0.8) 100%); 
+.overlay-gradient.t80 {
+	background: -moz-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.8) 0%,
+		rgba(var(--primary-color-2-rgb), 0.8) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.8) 0%,
+		rgba(var(--primary-color-2-rgb), 0.8) 100%
+	);
+	background: linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.8) 0%,
+		rgba(var(--primary-color-2-rgb), 0.8) 100%
+	);
 }
 
-.overlay-gradient.t70{
-background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.7) 0%, rgba(var(--primary-color-2-rgb),0.7) 100%);
-background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.7) 0%,rgba(var(--primary-color-2-rgb),0.7) 100%);
-background: linear-gradient(45deg, rgba(var(--primary-color-rgb),0.7) 0%,rgba(var(--primary-color-2-rgb),0.7) 100%); 
+.overlay-gradient.t70 {
+	background: -moz-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.7) 0%,
+		rgba(var(--primary-color-2-rgb), 0.7) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.7) 0%,
+		rgba(var(--primary-color-2-rgb), 0.7) 100%
+	);
+	background: linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.7) 0%,
+		rgba(var(--primary-color-2-rgb), 0.7) 100%
+	);
 }
 
-.overlay-gradient.t60{
-background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.6) 0%, rgba(var(--primary-color-2-rgb),0.6) 100%);
-background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.6) 0%,rgba(var(--primary-color-2-rgb),0.6) 100%);
-background: linear-gradient(45deg, rgba(var(--primary-color-rgb),0.6) 0%,rgba(var(--primary-color-2-rgb),0.6) 100%); 
+.overlay-gradient.t60 {
+	background: -moz-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.6) 0%,
+		rgba(var(--primary-color-2-rgb), 0.6) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.6) 0%,
+		rgba(var(--primary-color-2-rgb), 0.6) 100%
+	);
+	background: linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.6) 0%,
+		rgba(var(--primary-color-2-rgb), 0.6) 100%
+	);
 }
 
-.overlay-gradient.t50{
-background: -moz-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.5) 0%, rgba(var(--primary-color-2-rgb),0.5) 100%);
-background: -webkit-linear-gradient(45deg, rgba(var(--primary-color-rgb),0.5) 0%,rgba(var(--primary-color-2-rgb),0.5) 100%);
-background: linear-gradient(45deg, rgba(var(--primary-color-rgb),0.5) 0%,rgba(var(--primary-color-2-rgb),0.5) 100%); 
+.overlay-gradient.t50 {
+	background: -moz-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.5) 0%,
+		rgba(var(--primary-color-2-rgb), 0.5) 100%
+	);
+	background: -webkit-linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.5) 0%,
+		rgba(var(--primary-color-2-rgb), 0.5) 100%
+	);
+	background: linear-gradient(
+		45deg,
+		rgba(var(--primary-color-rgb), 0.5) 0%,
+		rgba(var(--primary-color-2-rgb), 0.5) 100%
+	);
 }
 
 a.btn-border.btn-invert,
 .small-border,
-.icon-box{
-	border-color:var(--primary-color);
+.icon-box {
+	border-color: var(--primary-color);
 }
 
-blockquote{
-	border-left-color:var(--primary-color);
+blockquote {
+	border-left-color: var(--primary-color);
 }
 
 header.header-light #mainmenu a span,
 header.scroll-light #mainmenu a span,
-#subheader h1{
-	border-bottom-color:var(--primary-color);
+#subheader h1 {
+	border-bottom-color: var(--primary-color);
 }
 
-@media only screen and (max-width: 992px) {	
-.table-pricing tbody tr th
-{
-background-image:linear-gradient(to right, var(--primary-color), var(--primary-color-2));
-}
-
+@media only screen and (max-width: 992px) {
+	.table-pricing tbody tr th {
+		background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-2));
+	}
 }
