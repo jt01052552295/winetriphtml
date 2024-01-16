@@ -158,6 +158,10 @@ a.a-underline:hover span {
     color: #fff;
 }
 
+.height40 {
+    height: 40%;
+}
+
 /* ================================================== */
 
 /*  header	*/
@@ -313,9 +317,9 @@ header.smaller {
     background: #fff;
     position: fixed;
     top: 0px;
-    -webkit-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
-    -moz-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
-    box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.05);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.1);
+    -moz-box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.1);
+    box-shadow: 0 4px 6px 0 rgba(10, 10, 10, 0.1);
     border: 0;
 }
 
@@ -1220,13 +1224,12 @@ header.header-light .logo-2 {
 /* topbar start here */
 
 #topbar {
-    /* pot-top: fixed; */
     z-index: 1000;
     width: 100%;
     padding: 0 30px;
     overflow: hidden;
     top: 0;
-    background: #111111;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 #topbar.topbar-dark {
@@ -1235,7 +1238,7 @@ header.header-light .logo-2 {
 
 #topbar a {
     text-decoration: none;
-    color: #ffffff;
+    color: #333;
 }
 
 .topbar-left,
@@ -1245,14 +1248,6 @@ header.header-light .logo-2 {
 
 .topbar-right {
     float: right;
-}
-
-.topbar-solid {
-    background: #ffffff;
-}
-
-.tb-light {
-    background: #ffffff;
 }
 
 #topbar:not(.topbar-noborder) .topbar-right .topbar-widget {
@@ -1468,10 +1463,6 @@ header.header-light .logo-2 {
     color: #fff;
 }
 
-.bloglist .post-text {
-    background: #fff;
-}
-
 .blog-list .blog-slider {
     margin-bottom: -60px;
 }
@@ -1591,15 +1582,9 @@ header.header-light .logo-2 {
     position: absolute;
 }
 
-#blog-comment li li .comment {
-}
-
 .comment-info {
     margin-left: 85px;
     margin-bottom: 5px;
-}
-
-.comment-info span {
 }
 
 .comment-info .c_name {
@@ -1621,9 +1606,6 @@ header.header-light .logo-2 {
 
 .blog-list h4 {
     color: #333;
-}
-
-.blog-list .post-wrapper {
 }
 
 .blog-read h4 {
@@ -1655,15 +1637,11 @@ header.header-light .logo-2 {
 }
 
 .post-content {
-    position: absolute;
-    transform: translateY(-50%);
+    width: 18rem;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     overflow: hidden;
-    /*-webkit-box-shadow: 5px 5px 40px 0px rgba(0,0,0,.1);
-    -moz-box-shadow: 5px 5px 40px 0px rgba(0,0,0,.1);
-    box-shadow: 5px 5px 40px 0px rgba(0,0,0,.1);*/
 }
 
 .post-content .date-box {
@@ -1694,13 +1672,28 @@ header.header-light .logo-2 {
 }
 
 .post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1rem;
+    background: #fff;
+    height: 10.5rem;
 }
 
 .post-text h4 {
     margin-top: 10px;
     margin-bottom: 10px;
     color: #333;
+    font-size: 18px;
+}
+
+.post-text h4,
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .post-text a {
@@ -13247,6 +13240,13 @@ img {
     left: 20%;
     bottom: 25%;
     font-size: 20px;
+}
+
+.tour_wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .camp_wrap {
