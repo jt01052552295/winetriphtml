@@ -83,6 +83,11 @@
     box-sizing: border-box;
 }
 
+ul,
+li {
+    list-style: none;
+}
+
 button {
     background: inherit;
     border: none;
@@ -591,6 +596,44 @@ header .header-col.mid .social-icons {
 
 .de-navbar-left.de_light #subheader h1 {
     color: #222;
+}
+
+#mo_menu {
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    background: #fff;
+    overflow-x: scroll;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+#mo_menu a {
+    color: #999;
+    font-size: 14px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-header img {
+    width: 12rem;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 /* ================================================== */
@@ -12252,6 +12295,10 @@ img {
 }
 
 @media only screen and (max-width: 992px) {
+    #topbar {
+        display: none;
+    }
+
     .col-right {
         position: absolute;
         top: -82px;
@@ -12496,22 +12543,8 @@ img {
 
     #mainmenu a {
         text-align: left;
-        padding-left: 0;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-
-    #mainmenu li li a,
-    #mainmenu li li li a {
-        padding-left: 0;
-    }
-
-    #mainmenu a:hover {
-        background: #111;
-    }
-
-    #mainmenu a:hover {
-        background: #111;
     }
 
     #mainmenu li ul {
@@ -12519,6 +12552,7 @@ img {
         position: inherit;
         margin: 0;
         width: 100%;
+        border-radius: 0;
     }
 
     #mainmenu li {
@@ -12526,6 +12560,12 @@ img {
         margin: 0;
         width: 100%;
         display: block;
+    }
+
+    #mainmenu li p {
+        padding: 14px;
+        color: #f32424;
+        font-size: 16px;
     }
 
     #mainmenu li a:after {
@@ -12552,11 +12592,6 @@ img {
         border: none;
     }
 
-    #mainmenu li ul li {
-        border: none;
-        padding-left: 40px;
-    }
-
     #mainmenu li ul li a {
         display: block;
     }
@@ -12571,7 +12606,7 @@ img {
     }
 
     #mainmenu li a {
-        color: #eceff3;
+        color: #333;
     }
 
     #mainmenu li li a:hover {
@@ -12792,6 +12827,10 @@ img {
     #mainmenu li ul.mega .menu-content {
         background: #202020;
         padding: 30px;
+    }
+
+    #mainmenu ul {
+        box-shadow: none;
     }
 
     /* header light */
