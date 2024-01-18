@@ -105,6 +105,10 @@ html {
     background: #fff;
 }
 
+html.open {
+    overflow: hidden;
+}
+
 body {
     font-family: "Pretendard-Regular", "Jost", Arial, sans-serif;
     font-size: 15px;
@@ -179,7 +183,7 @@ a.a-underline:hover span {
 
 header {
     width: 100%;
-    z-index: 1001;
+    z-index: 999;
     background: rgba(20, 20, 20, 0.8);
     margin: 0;
     padding: 0.5rem 0;
@@ -615,7 +619,7 @@ header .header-col.mid .social-icons {
     -webkit-transition: all 0.2s ease;
 }
 
-.open {
+#mo_menu.open {
     right: 0;
 }
 
@@ -625,6 +629,7 @@ header .header-col.mid .social-icons {
 }
 
 .menu-header {
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -632,16 +637,30 @@ header .header-col.mid .social-icons {
 }
 
 .menu-header img {
-    width: 12rem;
+    width: 10rem;
 }
 
 .topmenu {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
     padding: 1rem 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+}
+
+#bg_black {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+#bg_black.open {
+    display: block;
 }
 
 /* ================================================== */
@@ -913,18 +932,6 @@ header:not(.header-mobile) #mainmenu > li:hover ul.mega {
     font-family: FontAwesome;
     content: "\f0c9";
     font-size: 20px;
-}
-
-#menu-btn:hover {
-    background: #fff;
-}
-
-#menu-btn:hover:before {
-    color: #222;
-}
-
-.rtl #menu-btn {
-    float: left;
 }
 
 header.header-mobile.header-light,

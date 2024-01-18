@@ -1384,6 +1384,14 @@
         //         mobile_menu_show = 0;
         //     }
         // });
+        jQuery('#menu-btn').on('click', function () {
+            $('#mo_menu,#bg_black,html').addClass('open');
+        });
+
+        jQuery('.close').on('click', function () {
+            $('#mo_menu,#bg_black,html').removeClass('open');
+        });
+
         jQuery('a.btn').on('click', function (evn) {
             if (this.href.indexOf('#') != -1) {
                 evn.preventDefault();
