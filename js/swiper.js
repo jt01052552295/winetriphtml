@@ -19,4 +19,16 @@ var pagingSwiper = new Swiper('.mySwiper', {
     },
 });
 
+var dynamicSwiper = new Swiper('.mySwiper2', {
+    pagination: {
+        el: '.swiper-dynamic',
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        clickable: true,
+    },
+});
+
 swiper.controller.control = pagingSwiper;
