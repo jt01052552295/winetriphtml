@@ -1623,3 +1623,22 @@
         });
     });
 })(jQuery);
+
+
+function count(type){
+    const result = document.querySelector('#result');
+  
+    let number = result.innerText;
+  
+    if(type === 'plus') {
+      number = parseInt(number) + 1;
+    } else if(type === 'minus') {
+      if(number > 1){
+        number = parseInt(number) - 1;
+      } else {
+        number = parseInt(number) = 0;
+      }
+    }
+  
+      result.innerText = number;
+    }

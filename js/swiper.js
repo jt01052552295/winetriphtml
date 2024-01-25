@@ -1,5 +1,4 @@
 var swiper = new Swiper('.mySwiper', {
-    loop: true,
     pagination: {
         el: '.swiper-progressbar',
         type: 'progressbar',
@@ -12,7 +11,6 @@ var swiper = new Swiper('.mySwiper', {
 });
 
 var pagingSwiper = new Swiper('.mySwiper', {
-    loop: true,
     pagination: {
         el: '.swiper-fraction',
         type: 'fraction',
