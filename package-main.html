@@ -130,7 +130,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">캠핑</a>
+                                            <a href="camping.html">캠핑</a>
                                             <ul>
                                                 <li><a href="#">페스티벌</a></li>
                                                 <li><a href="#">엑티비티</a></li>
@@ -145,14 +145,14 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">이벤트</a>
+                                            <a href="event.html">이벤트</a>
                                             <ul>
-                                                <li><a href="#">공지사항</a></li>
+                                                <li><a href="event.html">공지사항</a></li>
                                                 <li><a href="#">행사정보</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="#">NFT</a>
+                                            <a href="nft.html">NFT</a>
                                             <ul>
                                                 <li><a href="#">NFT구매</a></li>
                                                 <li><a href="#">NFT신청</a></li>
@@ -179,121 +179,593 @@
                     </section>
 
                     <div class="select-menu">
-                        <div class="de-flex menu-wrap">
-                            <ul class="de-flex-col menu-main">
-                                <li>와인</li>
-                                <li>막걸리</li>
-                                <li>증류주</li>
-                                <li>약주/청주</li>
-                                <li>기타</li>
-                            </ul>
-                            <div class="fliter-menu">
-                                <select name="product-select" id="pd-sel">
-                                    <option value="new">최신순</option>
-                                    <option value="recommend">추천순</option>
-                                    <option value="high">높은가격순</option>
-                                    <option value="low">낮은가격순</option>
-                                </select>
-                            </div>
+                        <div class="de-flex tab-default">
+                            <nav class="de-flex-col">
+                                <div class="de-flex-col nav nav-tabs menu-main" id="nav-tab" role="tablist">
+                                    <a
+                                        class="nav-item nav-link active"
+                                        id="nav-wine-tab"
+                                        href="#nav-wine"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        aria-controls="nav-wine"
+                                        aria-selected="true"
+                                    >
+                                        와인
+                                    </a>
+                                    <a
+                                        class="nav-item nav-link"
+                                        id="nav-mak-tab"
+                                        href="#nav-mak"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        aria-controls="nav-mak"
+                                        aria-selected="false"
+                                    >
+                                        막걸리
+                                    </a>
+                                    <a
+                                        class="nav-item nav-link"
+                                        id="nav-soju-tab"
+                                        href="#nav-soju"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        aria-controls="nav-soju"
+                                        aria-selected="false"
+                                    >
+                                        증류주
+                                    </a>
+                                    <a
+                                        class="nav-item nav-link"
+                                        id="nav-eak-tab"
+                                        href="#nav-eak"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        aria-controls="nav-eak"
+                                        aria-selected="false"
+                                    >
+                                        약주/청주
+                                    </a>
+                                    <a
+                                        class="nav-item nav-link"
+                                        id="nav-order-tab"
+                                        href="#nav-order"
+                                        data-toggle="pill"
+                                        role="tab"
+                                        aria-controls="nav-order"
+                                        aria-selected="false"
+                                    >
+                                        기타
+                                    </a>
+                                    <div class="fliter-menu">
+                                        <select name="product-select" id="pd-sel">
+                                            <option value="new">최신순</option>
+                                            <option value="recommend">추천순</option>
+                                            <option value="high">높은가격순</option>
+                                            <option value="low">낮은가격순</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
 
-                    <section aria-label="section">
-                        <div class="de-flex mb60">
-                            <div class="product-wrap">
-                                <a href="package.html">
-                                    <div class="product-img">
-                                        <img src="./images/background/content3.png" alt="" />
+                    <div class="tab-content" id="nav-tabContent">
+                        <section
+                            aria-label="section"
+                            class="tab-pane fade show active"
+                            id="nav-wine"
+                            role="tabpanel"
+                            aria-labelledby="nav-wine-tab"
+                        >
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <a href="package.html">
+                                        <div class="product-img">
+                                            <img src="./images/background/content3.png" alt="" />
+                                        </div>
+                                    </a>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
                                     </div>
-                                </a>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                        </section>
+
+                        <section
+                            aria-label="section"
+                            class="tab-pane fade"
+                            id="nav-mak"
+                            role="tabpanel"
+                            aria-labelledby="nav-mak-tab"
+                        >
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <a href="package.html">
+                                        <div class="product-img">
+                                            <img src="./images/background/content2.png" alt="" />
+                                        </div>
+                                    </a>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="de-flex mb60">
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                        </section>
+
+                        <section
+                            aria-label="section"
+                            class="tab-pane fade"
+                            id="nav-soju"
+                            role="tabpanel"
+                            aria-labelledby="nav-soju-tab"
+                        >
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <a href="package.html">
+                                        <div class="product-img">
+                                            <img src="./images/background/content1.png" alt="" />
+                                        </div>
+                                    </a>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="de-flex mb60">
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                        </section>
+
+                        <section
+                            aria-label="section"
+                            class="tab-pane fade"
+                            id="nav-eak"
+                            role="tabpanel"
+                            aria-labelledby="nav-eak-tab"
+                        >
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <a href="package.html">
+                                        <div class="product-img">
+                                            <img src="./images/background/content4.png" alt="" />
+                                        </div>
+                                    </a>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-wrap">
-                                <div class="product-img"></div>
-                                <div class="product-txt">
-                                    <h4>느린마을막걸리 5입</h4>
-                                    <span>23,900원</span>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+
+                        <section
+                            aria-label="section"
+                            class="tab-pane fade"
+                            id="nav-order"
+                            role="tabpanel"
+                            aria-labelledby="nav-order-tab"
+                        >
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <a href="package.html">
+                                        <div class="product-img">
+                                            <img src="./images/background/content3.png" alt="" />
+                                        </div>
+                                    </a>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="de-flex mb60">
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                                <div class="product-wrap">
+                                    <div class="product-img"></div>
+                                    <div class="product-txt">
+                                        <h4>느린마을막걸리 5입</h4>
+                                        <span>23,900원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
 

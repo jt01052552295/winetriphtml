@@ -182,9 +182,8 @@ i.id-color {
 	color: var(--primary-color);
 }
 
-.id-color-2,
-span.id-color-2 {
-	color: var(--secondary-color);
+.base-color {
+	background-color: var(--base-color);
 }
 
 .id-color-3,
@@ -192,21 +191,6 @@ span.id-color-3 {
 	color: var(--tertiary-color);
 }
 
-.bg-color-2,
-.timeline h5,
-.testimonial-color .item:nth-child(2n) blockquote:before,
-a.btn-custom.bg-color-2 {
-	background: var(--secondary-color);
-}
-
-.bg-color-3,
-a.btn-custom.bg-color-3 {
-	background: var(--tertiary-color);
-}
-
-.feature-box-group .feature-box-type-1 i {
-	background: var(--secondary-color);
-}
 .bg-gradient-to-right,
 .post-image .post-info .inner,
 .switch::after,
