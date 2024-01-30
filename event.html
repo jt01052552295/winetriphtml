@@ -162,7 +162,9 @@
                                     </ul>
                                     <!-- mainmenu close -->
                                 </div>
-                                <div class="de-flex-col"><span id="menu-btn"></span></div>
+                                <div class="de-flex-col">
+                                    <span id="menu-btn"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -171,143 +173,101 @@
             <!-- header close -->
             <!-- content begin -->
             <div class="no-bottom no-top" id="content">
+                <section
+                    aria-label="section"
+                    class="text-center text-light bgimage bgsizecover"
+                    data-bgimage="url(images/background/bg4.png) center"
+                >
+                    <div class="bg-gradient"></div>
+                    <div class="camping_title">
+                        <h2>공지사항</h2>
+                    </div>
+                </section>
                 <div class="container">
                     <section aria-label="section">
-                        <div class="de-flex">
-                            <div class="swiper mySwiper2 main_wrap">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="../images/background/main_bg.png" alt="" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/background/bg4.png" alt="" />
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="../images/background/content1.png" alt="" />
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next bgsizecover"></div>
-                                <div class="swiper-button-prev bgsizecover"></div>
-                                <div class="swiper-pagination swiper-dynamic"></div>
-                            </div>
-                            <div class="main_txt">
-                                <div class="product-title">
-                                    <h3>느린마을막걸리 5입</h3>
-                                    <h4 class="price-large">23,900원</h4>
-                                </div>
-                                <div class="product-addwrap">
-                                    <span>느린마을막걸리 5입</span>
-                                    <div class="count_wrap">
-                                        <button type="button" class="add_btn minus" onclick='count("minus")'>-</button>
-                                        <span id="result">1</span>
-                                        <button type="button" class="add_btn plus" onclick='count("plus")'>+</button>
-                                    </div>
-                                    <span>23,900원</span>
-                                </div>
-                                <div class="de-flex">
-                                    <p>총 합계금액</p>
-                                    <h4 class="price-large">23,900원</h4>
-                                </div>
-                                <div class="text-right">
-                                    <button class="package_btn">장바구니</button>
-                                    <button class="package_btn bg-color">구매하기</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="de-flex"></div>
-
-                    <section aria-label="section">
                         <div class="container">
-                            <div class="row">
-                                <div class="">
-                                    <div class="tab-default">
-                                        <nav>
-                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a
-                                                    class="nav-item nav-link active"
-                                                    id="nav-home-tab"
-                                                    data-toggle="tab"
-                                                    href="#nav-home"
-                                                    role="tab"
-                                                    aria-controls="nav-home"
-                                                    aria-selected="true"
-                                                    >상품 정보</a
-                                                >
-                                                <a
-                                                    class="nav-item nav-link"
-                                                    id="nav-profile-tab"
-                                                    data-toggle="tab"
-                                                    href="#nav-profile"
-                                                    role="tab"
-                                                    aria-controls="nav-profile"
-                                                    aria-selected="false"
-                                                    >배송 안내</a
-                                                >
-                                                <a
-                                                    class="nav-item nav-link"
-                                                    id="nav-contact-tab"
-                                                    data-toggle="tab"
-                                                    href="#nav-contact"
-                                                    role="tab"
-                                                    aria-controls="nav-contact"
-                                                    aria-selected="false"
-                                                    >교환 및 반품안내</a
-                                                >
-                                                <a
-                                                    class="nav-item nav-link"
-                                                    id="nav-review-tab"
-                                                    data-toggle="tab"
-                                                    href="#nav-review"
-                                                    role="tab"
-                                                    aria-controls="nav-review"
-                                                    aria-selected="false"
-                                                    >리뷰</a
-                                                >
-                                            </div>
-                                        </nav>
-                                        <div class="tab-content" id="nav-tabContent">
-                                            <div
-                                                class="tab-pane fade show active"
-                                                id="nav-home"
-                                                role="tabpanel"
-                                                aria-labelledby="nav-home-tab"
-                                            >
-                                                <p>상품 설명</p>
-                                            </div>
-                                            <div
-                                                class="tab-pane fade"
-                                                id="nav-profile"
-                                                role="tabpanel"
-                                                aria-labelledby="nav-profile-tab"
-                                            >
-                                                <p>배송 안내</p>
-                                            </div>
-                                            <div
-                                                class="tab-pane fade"
-                                                id="nav-contact"
-                                                role="tabpanel"
-                                                aria-labelledby="nav-contact-tab"
-                                            >
-                                                <p>교환 및 반품안내</p>
-                                            </div>
-                                            <div
-                                                class="tab-pane fade"
-                                                id="nav-review"
-                                                role="tabpanel"
-                                                aria-labelledby="nav-review-tab"
-                                            >
-                                                <p>리뷰</p>
-                                            </div>
+                            <table class="table table-hover">
+                                <form name="noties_form_board_search" id="noties_form_board_search" method="post">
+                                    <input type="hidden" name="board_name" value="noties" />
+                                    <input type="hidden" name="page_id" value="2473" />
+                                    <div class="list-head pull-right">
+                                        <div class="mb-category">
+                                            <input type="hidden" name="category1" value="" />
+                                            <input type="hidden" name="category2" value="" />
+                                            <input type="hidden" name="category3" value="" />
                                         </div>
+                                        <div class="list-search">
+                                            <select
+                                                id="search_field"
+                                                name="search_field"
+                                                class="search-field margin-right-5"
+                                                title="검색 항목"
+                                            >
+                                                <option value="fn_pid">번호</option>
+                                                <option value="fn_title" selected>제목</option>
+                                                <option value="fn_user_name">작성자</option>
+                                                <option value="fn_content">내용</option>
+                                                <option value="fn_reg_date">날짜</option>
+                                                <option value="fn_tag">태그</option>
+                                            </select>
+                                            <input
+                                                type="text"
+                                                id="search_text"
+                                                class="search-text"
+                                                name="search_text"
+                                                accesskey="s"
+                                                title="검색어 입력"
+                                                value=""
+                                                onkeypress="checkEnterKey(sendSearchData);"
+                                            />
+                                            <input style="display: none !important" type="text" title="search" />
+                                            <button
+                                                onclick="sendSearchData();return false;"
+                                                title="검색"
+                                                class="btn btn-primary btn-search margin-left-5"
+                                                type="button"
+                                            >
+                                                <span>검색</span>
+                                            </button>
+                                        </div>
+                                        <div class="clear"></div>
                                     </div>
-                                </div>
+                                </form>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>제목</th>
+                                        <th>작성자</th>
+                                        <th>날짜</th>
+                                        <th>조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>등록된 게시물이 없습니다</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                        <td>12</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr />
+                            <a href="#" class="btn btn-primary pull-right">글쓰기</a>
+                            <div class="text-center">
+                                <ul class="pagination justify-content-center">
+                                    <li class=""><a class="page-link" href="#">Prev</a></li>
+                                    <li class="active"><a class="page-link" href="#">1</a></li>
+                                    <li class=""><a class="page-link" href="#">2</a></li>
+                                    <li class=""><a class="page-link" href="#">3</a></li>
+                                    <li class=""><a class="page-link" href="#">Next</a></li>
+                                </ul>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
+
             <!-- content close -->
             <a href="#" id="back-to-top"></a>
             <!-- footer begin -->

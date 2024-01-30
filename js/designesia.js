@@ -677,13 +677,13 @@
      * custom background
      * --------------------------------------------------*/
     function custom_bg() {
-        $('body,div,section,span').css('background-color', function () {
+        $('.bgcolor').css('background-color', function () {
             return jQuery(this).data('bgcolor');
         });
-        $('body,div,section').css('background', function () {
+        $('.bgimage').css('background', function () {
             return jQuery(this).data('bgimage');
         });
-        $('body,div,section').css('background-size', function () {
+        $('.bgsizecover').css('background-size', function () {
             return 'cover';
         });
     }
