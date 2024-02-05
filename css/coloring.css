@@ -186,6 +186,10 @@ i.id-color {
 	background-color: var(--base-color);
 }
 
+.sub-color {
+	color: var(--sub-color);
+}
+
 .id-color-3,
 span.id-color-3 {
 	color: var(--tertiary-color);

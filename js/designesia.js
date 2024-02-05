@@ -196,7 +196,7 @@
             },
             unmatch: function () {
                 $('header').removeClass('header-mobile');
-                jQuery('header').css('height', $tmp_h);
+                // jQuery('header').css('height', $tmp_h);
                 var body = jQuery('body');
                 if (body.hasClass('side-content')) {
                     body.addClass('side-layout');
@@ -1642,3 +1642,22 @@ function count(type){
   
       result.innerText = number;
     }
+
+
+    function selectAll(selectAll)  {
+        const checkboxes 
+             = document.getElementsByName('agree');
+        
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = selectAll.checked;
+        })
+      }
+
+         function selectAll_m(selectAll)  {
+        const checkboxes_m 
+             = document.getElementsByName('agree_m');
+        
+        checkboxes_m.forEach((checkbox) => {
+          checkbox.checked = selectAll.checked;
+        })
+      }
