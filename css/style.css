@@ -12267,9 +12267,6 @@ img {
 .camp_title {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     padding: 2rem 1.5rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -12658,6 +12655,97 @@ img {
     font-size: 14px;
     color: #999;
     margin-left: 0.5rem;
+}
+
+.mypage-side {
+    width: 220px;
+}
+
+.userprofile {
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+}
+
+.userinfo {
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.username span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.username em {
+    font-style: normal;
+}
+
+.user-email {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.profile-btn {
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 10px 8px;
+}
+
+.profile-btn a {
+    color: var(--dark-mode-color);
+}
+
+.mypage-category {
+    padding: 1.5rem;
+}
+
+.mypage-category h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    margin-bottom: 0;
+}
+
+.category-list li {
+    padding: 10px 0;
+}
+
+.category-list a {
+    color: #333;
+}
+
+.mypage-wrap {
+    width: 80%;
+    padding: 0 20px;
+}
+
+.mypage-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.mypage-img {
+    border-radius: 10px;
+    width: 10rem;
+    height: 9rem;
+    overflow: hidden;
+}
+
+.side-txt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #999;
+}
+
+.side-txt::before {
+    content: url(../images/ui/checkbox.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
 }
 
 /* ================================================== */
