@@ -179,6 +179,10 @@ a.a-underline:hover span {
     height: 40%;
 }
 
+.height24 {
+    height: 24rem;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -8578,9 +8582,6 @@ a.img-icon-zoom {
     width: 49.9%;
 }
 
-.gallery_border {
-}
-
 .pf_full_width.gallery_border .item,
 .pf_full_width.gallery_border.pf_2_cols .item,
 .pf_full_width.gallery_border.pf_3_cols .item {
@@ -12237,28 +12238,28 @@ img {
 }
 
 .camp_img1 {
-    width: 16.5rem;
+    width: 16rem;
     height: 20rem;
     background-image: url(../images/background/content1.png);
     border-radius: 5%;
 }
 
 .camp_img2 {
-    width: 16.5rem;
+    width: 16rem;
     height: 20rem;
     background-image: url(../images/background/content2.png);
     border-radius: 5%;
 }
 
 .camp_img3 {
-    width: 16.5rem;
+    width: 16rem;
     height: 20rem;
     background-image: url(../images/background/content3.png);
     border-radius: 5%;
 }
 
 .camp_img4 {
-    width: 16.5rem;
+    width: 16rem;
     height: 20rem;
     background-image: url(../images/background/content4.png);
     border-radius: 5%;
@@ -12267,6 +12268,7 @@ img {
 .camp_title {
     position: absolute;
     top: 0;
+    width: 16rem;
     padding: 2rem 1.5rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -12402,8 +12404,11 @@ img {
     justify-content: space-around;
 }
 
+.tab-default {
+    width: 100%;
+}
+
 .nav-tabs {
-    width: 73rem;
     padding: 1.2rem 0;
     border-top: 1px solid #dee2e6;
 }
@@ -12507,13 +12512,12 @@ img {
 .select-menu {
     display: flex;
     align-items: center;
-    gap: 0 2rem;
     width: 100%;
-    height: 5rem;
     padding: 1rem 0;
 }
 
 .menu-main {
+    width: 100%;
     font-size: 16px;
 }
 
@@ -12635,10 +12639,6 @@ img {
     padding: 1rem;
 }
 
-.height10 {
-    height: 10rem;
-}
-
 .agree_wrap {
     display: flex;
     flex-direction: column;
@@ -12655,6 +12655,18 @@ img {
     font-size: 14px;
     color: #999;
     margin-left: 0.5rem;
+}
+
+.payment-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 10rem;
+}
+
+.check-txt {
+    margin-left: 10px;
+    font-size: 14px;
 }
 
 .mypage-side {
@@ -12689,6 +12701,8 @@ img {
     border: 1px solid #c2c2c2;
     border-radius: 5px;
     padding: 10px 8px;
+    width: 70%;
+    margin: 10px auto 0 auto;
 }
 
 .profile-btn a {
@@ -12732,6 +12746,13 @@ img {
     width: 10rem;
     height: 9rem;
     overflow: hidden;
+}
+
+.mypage-price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: right;
 }
 
 .side-txt {
@@ -12794,8 +12815,17 @@ img {
 }
 
 @media only screen and (max-width: 992px) {
+    html {
+        scrollbar-width: none;
+    }
+
     #topbar {
         display: none;
+    }
+
+    footer a,
+    footer span {
+        font-size: 0.8rem;
     }
 
     .col-right {
@@ -12807,6 +12837,10 @@ img {
 
     .mb-sm-30 {
         margin-bottom: 30px;
+    }
+
+    .mt-sm-30 {
+        margin-top: 30px;
     }
 
     .p-sm-30 {
@@ -12841,8 +12875,8 @@ img {
         text-align: center;
     }
 
-    .sm-pt10 {
-        padding-top: 10px;
+    .sm-pt30 {
+        padding-top: 30px;
     }
 
     .inner-padding {
@@ -13431,6 +13465,15 @@ img {
         position: relative;
     }
 
+    .mo_column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mo-border-none {
+        border: none;
+    }
+
     .schedule-item .sc-info {
         padding-top: 20px;
     }
@@ -13516,16 +13559,86 @@ img {
 
     .de-flex {
         overflow-x: auto;
+        scrollbar-width: none;
     }
 
     .tour_wrap {
         width: 100%;
         overflow-x: auto;
+        scrollbar-width: none;
         margin: 2rem 0 0 1rem;
     }
 
     .card_wrap {
         margin-bottom: 2rem;
+    }
+
+    .mypage-side {
+        width: 100%;
+    }
+
+    .category-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mypage-wrap {
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .mypage-content {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .mo-fontsize {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+    }
+
+    .mypage-img {
+        width: 8rem;
+        height: 100%;
+    }
+
+    .mypage-price {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .profile-btn {
+        width: 50%;
+    }
+
+    .side-txt {
+        display: none;
+    }
+
+    .reservation_wrap {
+        width: 100%;
+    }
+
+    .payment-wrap {
+        height: 16rem;
+    }
+
+    .check-txt {
+        font-size: 0.75rem;
+    }
+
+    .mb-sm-10 {
+        margin-bottom: 10px;
+    }
+
+    .product-wrap {
+        margin-right: 1rem;
+    }
+
+    .product-img {
+        width: 13rem;
+        height: 16rem;
     }
 }
 
@@ -13740,6 +13853,30 @@ img {
     .yearmonth::after {
         right: 20%;
     }
+
+    .nav-tabs a {
+        font-size: 0.8rem;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .fliter-menu {
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: 30%;
+        transform: translateX(-10%);
+    }
+
+    .menu-main {
+        flex-flow: nowrap;
+    }
+
+    .product-addwrap {
+        flex-wrap: wrap;
+    }
 }
 
 /* -------------------------------------------------- 
@@ -13814,12 +13951,24 @@ img {
         justify-content: space-between;
     }
 
+    .footer_link a {
+        font-size: 0.9rem;
+    }
+
     .footer_link a::after {
         display: none;
     }
 
     .footer_txt::after {
         display: none;
+    }
+
+    .s1 div {
+        flex-direction: column;
+    }
+
+    address.s1 span {
+        font-size: 0.8rem;
     }
 }
 
