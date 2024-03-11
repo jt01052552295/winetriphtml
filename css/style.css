@@ -5330,7 +5330,6 @@ i.font60 {
 }
 
 .accordion-section-title {
-    font-family: "Jost";
     color: #111111;
     width: 100%;
     padding: 15px;
@@ -5372,8 +5371,7 @@ i.font60 {
 }
 
 .accordion-section-content {
-    padding: 15px;
-    padding-bottom: 5px;
+    padding-top: 10px;
     display: none;
     margin-bottom: 10px;
 }
@@ -12298,6 +12296,29 @@ img {
     font-weight: 700;
     color: #fff;
     margin: 0;
+}
+
+.nft_img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nft_info {
+    display: block;
+    background-color: #ededed;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.nft-price {
+    display: flex;
+    text-align: right;
+}
+
+.info-txt p {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1rem;
 }
 
 .more_btn {
